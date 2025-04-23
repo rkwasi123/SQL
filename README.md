@@ -1,57 +1,52 @@
-# Superstore SQL Query Project
+# 📊 Raymond's SQL Portfolio
 
-This project demonstrates how SQL can be used to extract meaningful insights from a database. The dataset used for this project is the **Superstore** database, which contains information about items sold at the store, including their names, categories, and prices.
+👋 Welcome to my SQL Portfolio!
 
-## Overview
+This repository showcases a collection of SQL queries and projects that demonstrate my ability to work with relational databases, perform data analysis, and extract insights through structured querying.
 
-The purpose of this project is to:
-1. Extract and sort information about item prices.
-2. Calculate meaningful statistics related to item prices.
-3. Focus on specific categories within the dataset, such as "Kitchen Supplies" and "Electronics."
+---
 
-## Queries
+## 📌 What's Inside
 
-### 1. Order Items by Price
-This query retrieves the names and prices of items and orders them by price in ascending order.
+Here you’ll find:
 
-```sql
-SELECT 
-    item_name
-    , price
-FROM superstore
-ORDER BY price;
+- 📂 Sample SQL queries (SELECT, JOIN, GROUP BY, CTEs, etc.)
+- 📊 Case studies and real-world business scenarios
+- 🧠 Analytical queries for reporting and data insights
+- 🛠️ Database creation and management scripts
+- 💡 Tips and tricks I’ve learned along the way
 
-### 2. General Statistics on Item Prices
-These queries calculate the total and average prices of all items in the database:
-Total Price of All Items:
+---
 
-```sql
-SELECT
-    SUM(price) AS total_price
-FROM superstore;
+## 🧪 Sample Projects
 
-Average Price of All Items:
-```sql
-SELECT 
-    ROUND(AVG(price), 2) AS average_price
-FROM superstore;
+| Project | Description |
+|--------|-------------|
+| **Chinook Database** | Queries analyzing music sales, customer behavior, and sales trends |
+| **Spotify Dataset** | Track-level analysis using audio features like energy and valence |
+| **Sales Dashboard Prep** | SQL prep queries used for Power BI visualizations |
+| **Climate Conference Project** | Data prep and insights generation for a climate policy summit |
+| **Customer & Order Analytics** | E-commerce SQL analysis of customers, orders, and product sales |
+| **Final SQL Project** | Capstone-style analysis covering advanced SQL topics |
+| **Fortune 500 Analysis** | Financial and performance insights from Fortune 500 companies |
 
-### 3. Statistics on "Kitchen Supplies"
-This query calculates the total price of items categorized as "Kitchen Supplies."
+---
 
-```sql
-SELECT 
-    ROUND(SUM(price), 2) AS total_price
-FROM superstore
-WHERE category = 'Kitchen Supplies';
+## 💬 Let's Connect
 
-### 4. Cheapest Item in "Electronics"
-This query retrieves the details of the cheapest item in the "Electronics" category.
+Feel free to explore the code, fork it, or reach out if you:
+- Have questions about any of the queries
+- Want to collaborate on a project
+- Just want to connect and talk data!
 
-```sql
-SELECT *
-FROM superstore
-WHERE category = 'Electronics'
-ORDER BY price ASC;
+📧 Email: [rykadzashie@outlook.com]  
+🔗 LinkedIn: [https://www.linkedin.com/in/raymond-kadzashie/]
+
+---
+
+> ✨ Tip: Be sure to check out the `projects/` folder for full use-case SQL walkthroughs!
+
+Thanks for stopping by! 🙌
+
 
 
